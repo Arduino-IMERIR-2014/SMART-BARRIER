@@ -70,34 +70,34 @@
       <compileType>
         <cTool>
           <incDir>
-            <pElem>../../../../../../Arduino/hardware/arduino/cores/arduino</pElem>
-            <pElem>../../../../../../Arduino/libraries/Servo</pElem>
-            <pElem>../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master</pElem>
-            <pElem>../../../../../../Arduino/libraries/Wire</pElem>
-            <pElem>../../../../../../Arduino/libraries/Wire/utility</pElem>
-            <pElem>../../../../../../Arduino/libraries/SoftwareSerial</pElem>
+            <pElem>/../../../../../../Arduino/hardware/arduino/cores/arduino</pElem>
+            <pElem>/../../../../../../Arduino/libraries/Servo</pElem>
+            <pElem>/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master</pElem>
+            <pElem>/../../../../../../Arduino/libraries/Wire</pElem>
+            <pElem>/../../../../../../Arduino/libraries/Wire/utility</pElem>
+            <pElem>/../../../../../../Arduino/libraries/SoftwareSerial</pElem>
           </incDir>
           <commandLine>-Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100</commandLine>
         </cTool>
         <ccTool>
           <incDir>
-            <pElem>../../../../../../Arduino/hardware/arduino/cores/arduino</pElem>
-            <pElem>../../../../../../Arduino/libraries/Servo</pElem>
-            <pElem>../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master</pElem>
-            <pElem>../../../../../../Arduino/libraries/Wire</pElem>
-            <pElem>../../../../../../Arduino/libraries/Wire/utility</pElem>
-            <pElem>../../../../../../Arduino/libraries/SoftwareSerial</pElem>
+            <pElem>/../../../../../../Arduino/hardware/arduino/cores/arduino</pElem>
+            <pElem>/../../../../../../Arduino/libraries/Servo</pElem>
+            <pElem>/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master</pElem>
+            <pElem>/../../../../../../Arduino/libraries/Wire</pElem>
+            <pElem>/../../../../../../Arduino/libraries/Wire/utility</pElem>
+            <pElem>/../../../../../../Arduino/libraries/SoftwareSerial</pElem>
           </incDir>
           <commandLine>-Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100</commandLine>
         </ccTool>
         <linkerTool>
           <linkerAddLib>
-            <pElem>../../../../Documents/NetBeansProjects/arduino_corelib/dist/Debug/Arduino-Windows</pElem>
+            <pElem>/../../Liibarduino/dist/Debug/Arduino-Windows</pElem>
           </linkerAddLib>
           <commandlineTool>avr-gcc</commandlineTool>
           <linkerLibItems>
+            <linkerLibLibItem>liibarduino</linkerLibLibItem>
             <linkerLibStdlibItem>Mathematics</linkerLibStdlibItem>
-            <linkerLibLibItem>arduino_corelib</linkerLibLibItem>
           </linkerLibItems>
           <commandLine>-Os -Wl,--gc-sections -mmcu=atmega328p</commandLine>
         </linkerTool>

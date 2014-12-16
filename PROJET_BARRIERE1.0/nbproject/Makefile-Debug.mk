@@ -51,7 +51,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-L../../../../Documents/NetBeansProjects/arduino_corelib/dist/Debug/Arduino-Windows -lm -larduino_corelib
+LDLIBSOPTIONS=-L/../../Liibarduino/dist/Debug/Arduino-Windows -lliibarduino -lm
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -64,72 +64,72 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projet_barriere1.0.exe: ${OBJECTFILES
 ${OBJECTDIR}/C_BOUTON.cpp.gch: C_BOUTON.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_BOUTON.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_BOUTON.cpp
 
 ${OBJECTDIR}/C_BUZZER.cpp.gch: C_BUZZER.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_BUZZER.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_BUZZER.cpp
 
 ${OBJECTDIR}/C_CAPTEUR_LUMIERE.cpp.gch: C_CAPTEUR_LUMIERE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_CAPTEUR_LUMIERE.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_CAPTEUR_LUMIERE.cpp
 
 ${OBJECTDIR}/C_CARTE.cpp.gch: C_CARTE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_CARTE.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_CARTE.cpp
 
 ${OBJECTDIR}/C_COMMUNICATION_USB.cpp.gch: C_COMMUNICATION_USB.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_COMMUNICATION_USB.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_COMMUNICATION_USB.cpp
 
 ${OBJECTDIR}/C_ECRAN.cpp.gch: C_ECRAN.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_ECRAN.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_ECRAN.cpp
 
 ${OBJECTDIR}/C_ENTREE.cpp.gch: C_ENTREE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_ENTREE.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_ENTREE.cpp
 
 ${OBJECTDIR}/C_LED.cpp.gch: C_LED.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_LED.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_LED.cpp
 
 ${OBJECTDIR}/C_MOTEUR.cpp.gch: C_MOTEUR.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_MOTEUR.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_MOTEUR.cpp
 
 ${OBJECTDIR}/C_OBJET_ENTREE.cpp.gch: C_OBJET_ENTREE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_OBJET_ENTREE.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_OBJET_ENTREE.cpp
 
 ${OBJECTDIR}/C_OBJET_SORTIE.cpp.gch: C_OBJET_SORTIE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_OBJET_SORTIE.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_OBJET_SORTIE.cpp
 
 ${OBJECTDIR}/C_POTENTIOMETRE.cpp.gch: C_POTENTIOMETRE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_POTENTIOMETRE.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_POTENTIOMETRE.cpp
 
 ${OBJECTDIR}/C_SORTIE.cpp.gch: C_SORTIE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_SORTIE.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" C_SORTIE.cpp
 
 ${OBJECTDIR}/main.cpp.gch: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../../../../Arduino/hardware/arduino/cores/arduino -I../../../../../../Arduino/libraries/Servo -I../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I../../../../../../Arduino/libraries/Wire -I../../../../../../Arduino/libraries/Wire/utility -I../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" main.cpp
+	$(COMPILE.cc) -g -I/../../../../../../Arduino/hardware/arduino/cores/arduino -I/../../../../../../Arduino/libraries/Servo -I/../../../../../../Arduino/libraries/Grove_LCD_RGB_Backlight_master -I/../../../../../../Arduino/libraries/Wire -I/../../../../../../Arduino/libraries/Wire/utility -I/../../../../../../Arduino/libraries/SoftwareSerial -MMD -MP -MF "$@.d" -o "$@" main.cpp
 
 # Subprojects
 .build-subprojects:

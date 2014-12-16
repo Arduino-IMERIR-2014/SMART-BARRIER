@@ -56,33 +56,44 @@ void Mode_Automatique() { //Passage en Mode Automatique
 void Mode_Manuel(String P_Action) { //Passage en Mode Manuel
     switch (P_Action.toInt()) { //Suivant ce que l'action casté en entier :
         case ACTIVE_LED_PORTAIL:
+            la_carte.Get_Sortie().Affiche("Active Led Portail");
             la_carte.Get_Sortie().Active_Led_Portail();
             break;
         case DESACTIVE_LED_PORTAIL:
+            la_carte.Get_Sortie().Affiche("Desactive Led Portail");
             la_carte.Get_Sortie().Desactive_Led_Portail();
             break;
         case ACTIVE_MOTEUR:
+            la_carte.Get_Sortie().Affiche("Active Moteur");
             la_carte.Get_Sortie().Active_Moteur();
             break;
         case DESACTIVE_MOTEUR:
+            la_carte.Get_Sortie().Affiche("Desactive Moteur");
             la_carte.Get_Sortie().Desactive_Moteur();
             break;
         case ACTIVE_BUZZER:
+            la_carte.Get_Sortie().Affiche("Active Buzzer");
             la_carte.Get_Sortie().Active_Buzzer();
             break;
         case DESACTIVE_BUZZER:
+            la_carte.Get_Sortie().Affiche("Desactive Buzzer");
             la_carte.Get_Sortie().Desactive_Buzzer();
             break;
         case ACTIVE_LED_FLASH:
+            la_carte.Get_Sortie().Affiche("Active Led Flash");
             la_carte.Get_Sortie().Active_Led_Photo();
             break;
         case DESACTIVE_LED_FLASH:
+            la_carte.Get_Sortie().Affiche("Desactive Led Flash");
             la_carte.Get_Sortie().Desactive_Led_Photo();
             break;
         case RECUPERE_INFO_CAPTEUR_LUMIERE:
+            la_carte.Get_Sortie().Affiche("Recup Capteur Lumiere");
             Com_USB.Envoi(la_carte.Get_Entree().Get_Si_Jour());
             break;
         case RECUPERE_INFO_BOUTON:
+            la_carte.Get_Sortie().Affiche("Recup Bouton");
+            //            la_carte.Get_Sortie().Affiche((int)la_carte.Get_Entree().Get_Etat_Bouton());
             Com_USB.Envoi(la_carte.Get_Entree().Get_Etat_Bouton());
             break;
         case RESET:
@@ -107,8 +118,8 @@ void Menu_Principal() {
 #ifdef DEBUG_COM_USB
     Com_USB.Set_Ecran(la_carte.Get_Sortie().Get_Ecran()); //Permet a la classe de com USB de connaitre l'écran
 #endif
-    Message_Recu = Com_USB.Reception();
-    if (Message_Recu.toInt() != 0)Mode = Message_Recu; //Si il y a 0, c'est qu'on n'a rien recu
+    Mode = Com_USB.Reception();
+//    if (Message_Recu.toInt() != 0)Mode = Message_Recu; //Si il y a 0, c'est qu'on n'a rien recu
     switch (Mode.toInt()) {
         case MODE_AUTOMATIQUE:
             la_carte.Get_Sortie().Affiche("Mode Automatique");
@@ -121,10 +132,10 @@ void Menu_Principal() {
             break;
         default:
             if (manuel_active == true) {
-                if (Mode.toInt() != mode_precedent)Mode_Manuel(Mode);
+                if (Mode.toInt() != 0)Mode_Manuel(Mode);
                 mode_precedent = Mode.toInt();
             } else {
-                la_carte.Get_Sortie().Affiche("IL FAUT ACTIVER LE MODE MANUEL !");
+                //rien recu 
             }
             break;
 
@@ -137,8 +148,10 @@ void Menu_Principal() {
  *
  */
 void loop() {
-    int valeur;
-    valeur = la_carte.Get_Entree().Get_Valeur_Potentiometre();
-    la_carte.Get_Sortie().Change_Valeur_Moteur(valeur);
-//    Menu_Principal();
+    //    String message = Com_USB.Reception();
+    //    if(message != "0")la_carte.Get_Sortie().Affiche(message);
+    //    int valeur;
+    //    valeur = la_carte.Get_Entree().Get_Valeur_Potentiometre();
+    //    la_carte.Get_Sortie().Change_Valeur_Moteur(valeur);
+    Menu_Principal();
 }

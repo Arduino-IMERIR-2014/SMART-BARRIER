@@ -14,6 +14,7 @@
    *  La Classe héritée de la classe C_OBJET_SORTIE permet de représenter une buzzer.
    */
 class C_BUZZER : protected C_OBJET_SORTIE{
+    friend class C_MOTEUR;
     friend class C_SORTIE;
 protected:
     /*!

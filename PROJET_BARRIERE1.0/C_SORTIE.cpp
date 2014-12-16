@@ -17,6 +17,7 @@ C_SORTIE::C_SORTIE() {
     Led_Photo->Init(PORT_LED_PHOTO);
     Moteur = new C_MOTEUR;
     Moteur->Init(PORT_MOTEUR);
+    Moteur->Set_Buzzer_Led(Le_Buzzer,Led_Portail);
     Ecran = new C_ECRAN;
     Ecran->Init(0);
     Ecran->Active();
@@ -42,11 +43,11 @@ void C_SORTIE::Desactive_Led_Photo() {
 }
 
 void C_SORTIE::Active_Moteur() {
-    Moteur->Active();
+    Moteur->Active_Plus_Led_Plus_Buzzer();
 }
 
 void C_SORTIE::Desactive_Moteur() {
-    Moteur->Desactive();
+    Moteur->Desactive_Plus_Led_Plus_Buzzer();
 }
 
 void C_SORTIE::Change_Valeur_Moteur(int P_Valeur) {

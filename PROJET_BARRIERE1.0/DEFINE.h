@@ -13,11 +13,11 @@
 #define PORT_LED_PORTAIL 4
 #define PORT_LED_PHOTO 7
 #define PORT_MOTEUR 8 
-#define PORT_BOUTON 5
+#define PORT_BOUTON 6
 #define PORT_POTENTIOMETRE 2
 #define PORT_BUZZER 3
 #define PORT_CAPTEUR_LUMIERE 0
-#define PORT_MICRO 2
+//#define PORT_MICRO 2
 
 #define SEUIL_JOUR 700
 
