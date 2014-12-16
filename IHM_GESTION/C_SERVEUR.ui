@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>C_SERVEUR</class>
+ <widget class="QMainWindow" name="C_SERVEUR">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>775</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>775</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>C_SERVEUR</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Courier&quot;;</string>
+      </property>
+      <property name="text">
+       <string>IHM de gestion d'accès au parking</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Accueil</string>
+       </attribute>
+       <widget class="QPushButton" name="quitter">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>430</y>
+          <width>101</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Quitter</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="mode_auto">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>20</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Mode automatique</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="mode_manu">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>80</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Mode manuel</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="aff_bdd">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>140</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>BDD informations clients</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="listWidget">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>20</y>
+          <width>341</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #547546;</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>250</y>
+          <width>191</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+border: 1px solid gray;
+border-radius: 10px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Options parking</string>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Place véhicule légers</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Place véhicule lourds</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>190</y>
+           <width>31</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="p_veh_legers">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>30</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="p_veh_lourds">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>70</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="total">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>190</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>31</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Autre</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="total_2">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>150</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>110</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Motos/Vélos</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="total_3">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>110</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>430</y>
+          <width>161</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+border: 1px solid gray;
+border-radius: 10px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Horaires</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="aff_bdd_2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>200</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>BDD informations parking</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Modification des données</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>311</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+border: 1px solid gray;
+border-radius: 10px;
+color: #547546;
+ }</string>
+        </property>
+        <property name="title">
+         <string>Rechercher</string>
+        </property>
+        <widget class="QLineEdit" name="recherche">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>30</y>
+           <width>113</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="placeholderText">
+          <string>Numéro du client</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="rech_client">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Rechercher</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>380</y>
+          <width>311</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+border: 1px solid gray;
+border-radius: 10px;
+color: #547546;
+ }</string>
+        </property>
+        <property name="title">
+         <string>Supprimer</string>
+        </property>
+        <widget class="QPushButton" name="supp">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="supp_2">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>30</y>
+           <width>113</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="placeholderText">
+          <string>Numéro du client</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>140</y>
+          <width>311</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+border: 1px solid gray;
+border-radius: 10px;
+color: #547546;
+ }</string>
+        </property>
+        <property name="title">
+         <string>Ajouter</string>
+        </property>
+        <widget class="QPushButton" name="ajout">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ajouter</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="num_client">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>20</y>
+           <width>113</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="placeholderText">
+          <string>Numéro du client</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="nom">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>60</y>
+           <width>113</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="placeholderText">
+          <string>Nom</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="prenom">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>100</y>
+           <width>113</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="placeholderText">
+          <string>Prénom</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>130</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Type de véhicule :</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="voiture">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>140</y>
+           <width>82</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Voiture</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="moto_velo">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>160</y>
+           <width>82</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Moto/Vélo</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="utilitaire">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>180</y>
+           <width>82</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Utilitaire</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QListWidget" name="listWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>30</y>
+          <width>281</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #547546;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Mode manuel</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>30</y>
+          <width>261</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #547546;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Activer led portail</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>100</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Désactiver led portail</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>150</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Activer moteur</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>200</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Désactiver moteur</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>250</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Activer buzzer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>300</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Désactiver buzzer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>350</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Activer led flash</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>400</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Désactiver led flash</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>171</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{
+border: 1px solid gray;
+border-radius: 10px;
+color: #547546;
+}</string>
+        </property>
+        <property name="title">
+         <string>Activer/désactiver actionneurs</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>20</y>
+          <width>171</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{
+border: 1px solid gray;
+border-radius: 10px;
+color: #547546;
+}</string>
+        </property>
+        <property name="title">
+         <string>Demander états capteurs</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>111</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Bouton</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>80</y>
+           <width>111</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Capteur lumière</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_12">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>120</y>
+           <width>111</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Reset</string>
+         </property>
+        </widget>
+       </widget>
+       <zorder>groupBox_4</zorder>
+       <zorder>listWidget_3</zorder>
+       <zorder>pushButton</zorder>
+       <zorder>pushButton_2</zorder>
+       <zorder>pushButton_4</zorder>
+       <zorder>pushButton_5</zorder>
+       <zorder>pushButton_6</zorder>
+       <zorder>pushButton_7</zorder>
+       <zorder>pushButton_8</zorder>
+       <zorder>pushButton_9</zorder>
+       <zorder>groupBox_5</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Affichage caméra</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Paramétres</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>775</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Fichier">
+    <property name="title">
+     <string>&amp;Fichier</string>
+    </property>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menu_Fichier"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mode_auto</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Mode_Automatique()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>106</x>
+     <y>556</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mode_manu</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Mode_manuel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>552</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quitter</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>687</x>
+     <y>527</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>633</x>
+     <y>560</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rech_client</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Rechercher_client()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>420</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>supp</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Supprimer_client()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>507</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>560</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Active_led_portail()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>122</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>144</x>
+     <y>38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Desactive_led_portail()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Active_moteur()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>17</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Desactive_moteur()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>14</x>
+     <y>294</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Active_buzzer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>114</x>
+     <y>347</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>12</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Desactive_buzzer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>13</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Active_led_flash()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>131</x>
+     <y>447</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>16</x>
+     <y>430</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Desactive_led_flash()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>497</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>18</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ajout</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Ajouter_client()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>267</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>29</x>
+     <y>268</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>prenom</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Mettre_majuscule()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>453</x>
+     <y>571</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nom</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Mettre_majuscule()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>571</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aff_bdd_2</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Creer_vue_parking()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aff_bdd</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Creer_vue_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>583</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Demande_etat_bouton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>625</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>741</x>
+     <y>573</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Demande_etat_capteur_lumiere()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>636</x>
+     <y>186</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>573</x>
+     <y>578</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Reset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>601</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>383</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Mettre_majuscule()</slot>
+  <slot>Supprimer_client()</slot>
+  <slot>Creer_vue_info()</slot>
+  <slot>Rechercher_client()</slot>
+  <slot>Ajouter_client()</slot>
+  <slot>Desactive_led_flash()</slot>
+  <slot>Active_led_flash()</slot>
+  <slot>Desactive_buzzer()</slot>
+  <slot>Active_buzzer()</slot>
+  <slot>Desactive_moteur()</slot>
+  <slot>Active_moteur()</slot>
+  <slot>Desactive_led_portail()</slot>
+  <slot>Active_led_portail()</slot>
+  <slot>Mode_Automatique()</slot>
+  <slot>Mode_manuel()</slot>
+  <slot>Creer_vue_parking()</slot>
+  <slot>Demande_etat_bouton()</slot>
+  <slot>Demande_etat_capteur_lumiere()</slot>
+  <slot>Reset()</slot>
+ </slots>
+</ui>
