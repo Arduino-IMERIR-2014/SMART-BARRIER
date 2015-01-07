@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="arduino" displayName="arduino" projectFiles="true">
+      <logicalFolder name="avr-libc" displayName="avr-libc" projectFiles="true">
+        <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/malloc.c</itemPath>
+        <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/realloc.c</itemPath>
+        <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/sectionname.h</itemPath>
+        <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/stdlib_private.h</itemPath>
+      </logicalFolder>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Arduino.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/CDC.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Client.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/HID.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/HardwareSerial.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/HardwareSerial.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/IPAddress.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/IPAddress.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Platform.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Print.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Print.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Printable.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Server.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Stream.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Stream.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Tone.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/USBAPI.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/USBCore.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/USBCore.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/USBDesc.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/Udp.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/WCharacter.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/WInterrupts.c</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/WMath.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/WString.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/WString.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/binary.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/main.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/new.cpp</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/new.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/pins_arduino.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/wiring.c</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/wiring_analog.c</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/wiring_digital.c</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/wiring_private.h</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/wiring_pulse.c</itemPath>
+      <itemPath>../../../../../Arduino/hardware/arduino/cores/arduino/wiring_shift.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../../../../Arduino/hardware/arduino/cores/arduino</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>Arduino|WinAVR</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>../../../../../Arduino/hardware/arduino/cores/arduino</pElem>
+          </incDir>
+          <commandLine>-Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100</commandLine>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>../../../../../Arduino/hardware/arduino/cores/arduino</pElem>
+          </incDir>
+          <commandLine>-Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100</commandLine>
+        </ccTool>
+        <archiverTool>
+          <commandlineTool>avr-ar</commandlineTool>
+          <ranlibTool>avr-ranlib</ranlibTool>
+        </archiverTool>
+      </compileType>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/CDC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Client.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/HID.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/HardwareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Platform.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Print.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Server.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Stream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Tone.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/USBAPI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Udp.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WString.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/malloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/realloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/sectionname.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/stdlib_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/binary.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/new.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/new.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/pins_arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_pulse.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>Arduino|WinAVR</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/CDC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Client.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/HID.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/HardwareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Platform.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Print.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Server.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Stream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Tone.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/USBAPI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/Udp.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WString.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/malloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/realloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/sectionname.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/avr-libc/stdlib_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/binary.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/new.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/new.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/pins_arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_pulse.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../../Arduino/hardware/arduino/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
