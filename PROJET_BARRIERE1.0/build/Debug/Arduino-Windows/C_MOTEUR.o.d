@@ -11,7 +11,8 @@ build/Debug/Arduino-Windows/C_MOTEUR.o: C_MOTEUR.cpp C_MOTEUR.h \
   /../../../../../../Arduino/hardware/arduino/cores/arduino/Printable.h \
   /../../../../../../Arduino/hardware/arduino/cores/arduino/new.h \
   /../../../../../../Arduino/hardware/arduino/cores/arduino/pins_arduino.h \
-  /../../../../../../Arduino/libraries/Servo/Servo.cpp
+  /../../../../../../Arduino/libraries/Servo/Servo.cpp \
+  /../../../../../../Arduino/libraries/Servo/Servo.h
 
 C_MOTEUR.h:
 
@@ -44,3 +45,5 @@ C_LED.h:
 /../../../../../../Arduino/hardware/arduino/cores/arduino/pins_arduino.h:
 
 /../../../../../../Arduino/libraries/Servo/Servo.cpp:
+
+/../../../../../../Arduino/libraries/Servo/Servo.h:

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="90">
+<configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>COMMANDE.h</itemPath>
+      <itemPath>C_SERVEUR.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-      <itemPath>COMMANDE.h</itemPath>
-      <itemPath>C_SERVEUR.cpp</itemPath>
-      <itemPath>C_SERVEUR.h</itemPath>
       <itemPath>C_SERVEUR.ui</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>C_SERVEUR.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -34,7 +34,7 @@
   <confs>
     <conf name="Debug" type="4">
       <toolsSet>
-        <compilerSet>QT|MinGW</compilerSet>
+        <compilerSet>MinGW|MinGW</compilerSet>
         <dependencyChecking>true</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
@@ -42,6 +42,9 @@
         <modules>core gui widgets network sql</modules>
       </qt>
       <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
       </compileType>
       <packaging>
         <packType>Tar</packType>

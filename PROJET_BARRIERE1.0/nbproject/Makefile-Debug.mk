@@ -51,7 +51,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-L/../../Liibarduino/dist/Debug/Arduino-Windows -lliibarduino -lm
+LDLIBSOPTIONS=-L../../../NetBeansProjects/arduino_corelib/dist/Debug/Arduino-Windows -larduino_corelib -lm
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}

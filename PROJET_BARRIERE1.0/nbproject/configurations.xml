@@ -91,12 +91,13 @@
           <commandLine>-Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100</commandLine>
         </ccTool>
         <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projet_barriere1.0</output>
           <linkerAddLib>
-            <pElem>/../../Liibarduino/dist/Debug/Arduino-Windows</pElem>
+            <pElem>../../../NetBeansProjects/arduino_corelib/dist/Debug/Arduino-Windows</pElem>
           </linkerAddLib>
           <commandlineTool>avr-gcc</commandlineTool>
           <linkerLibItems>
-            <linkerLibLibItem>liibarduino</linkerLibLibItem>
+            <linkerLibLibItem>arduino_corelib</linkerLibLibItem>
             <linkerLibStdlibItem>Mathematics</linkerLibStdlibItem>
           </linkerLibItems>
           <commandLine>-Os -Wl,--gc-sections -mmcu=atmega328p</commandLine>

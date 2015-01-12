@@ -55,7 +55,7 @@
        <enum>QTabWidget::Triangular</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -65,7 +65,7 @@
         <property name="geometry">
          <rect>
           <x>600</x>
-          <y>430</y>
+          <y>450</y>
           <width>101</width>
           <height>23</height>
          </rect>
@@ -91,7 +91,7 @@
         <property name="geometry">
          <rect>
           <x>70</x>
-          <y>80</y>
+          <y>70</y>
           <width>131</width>
           <height>23</height>
          </rect>
@@ -104,7 +104,7 @@
         <property name="geometry">
          <rect>
           <x>70</x>
-          <y>140</y>
+          <y>120</y>
           <width>131</width>
           <height>23</height>
          </rect>
@@ -119,7 +119,7 @@
           <x>370</x>
           <y>20</y>
           <width>341</width>
-          <height>381</height>
+          <height>331</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -129,10 +129,10 @@
        <widget class="QGroupBox" name="groupBox_6">
         <property name="geometry">
          <rect>
-          <x>50</x>
-          <y>250</y>
-          <width>191</width>
-          <height>231</height>
+          <x>30</x>
+          <y>220</y>
+          <width>221</width>
+          <height>261</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -148,7 +148,7 @@ border-radius: 10px;
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>30</y>
+           <y>60</y>
            <width>101</width>
            <height>16</height>
           </rect>
@@ -157,14 +157,14 @@ border-radius: 10px;
           <string notr="true">color: #547546;</string>
          </property>
          <property name="text">
-          <string>Place véhicule légers</string>
+          <string>Places voiture</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_2">
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>70</y>
+           <y>100</y>
            <width>101</width>
            <height>16</height>
           </rect>
@@ -173,14 +173,14 @@ border-radius: 10px;
           <string notr="true">color: #547546;</string>
          </property>
          <property name="text">
-          <string>Place véhicule lourds</string>
+          <string>Places utilitaire</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_4">
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>190</y>
+           <y>220</y>
            <width>31</width>
            <height>16</height>
           </rect>
@@ -192,12 +192,12 @@ border-radius: 10px;
           <string>Total</string>
          </property>
         </widget>
-        <widget class="QListWidget" name="p_veh_legers">
+        <widget class="QListWidget" name="p_veh_legers_dispo">
          <property name="geometry">
           <rect>
            <x>120</x>
-           <y>30</y>
-           <width>41</width>
+           <y>60</y>
+           <width>31</width>
            <height>21</height>
           </rect>
          </property>
@@ -205,12 +205,12 @@ border-radius: 10px;
           <string notr="true">color: #547546;</string>
          </property>
         </widget>
-        <widget class="QListWidget" name="p_veh_lourds">
+        <widget class="QListWidget" name="p_veh_utilitaire_dispo">
          <property name="geometry">
           <rect>
            <x>120</x>
-           <y>70</y>
-           <width>41</width>
+           <y>100</y>
+           <width>31</width>
            <height>21</height>
           </rect>
          </property>
@@ -218,12 +218,12 @@ border-radius: 10px;
           <string notr="true">color: #547546;</string>
          </property>
         </widget>
-        <widget class="QListWidget" name="total">
+        <widget class="QListWidget" name="total_dispo">
          <property name="geometry">
           <rect>
            <x>120</x>
-           <y>190</y>
-           <width>41</width>
+           <y>220</y>
+           <width>31</width>
            <height>21</height>
           </rect>
          </property>
@@ -235,8 +235,8 @@ border-radius: 10px;
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>150</y>
-           <width>31</width>
+           <y>180</y>
+           <width>101</width>
            <height>16</height>
           </rect>
          </property>
@@ -244,15 +244,15 @@ border-radius: 10px;
           <string notr="true">color: #547546;</string>
          </property>
          <property name="text">
-          <string>Autre</string>
+          <string>Places poids lourd</string>
          </property>
         </widget>
-        <widget class="QListWidget" name="total_2">
+        <widget class="QListWidget" name="poid_lourd_dispo">
          <property name="geometry">
           <rect>
            <x>120</x>
-           <y>150</y>
-           <width>41</width>
+           <y>180</y>
+           <width>31</width>
            <height>21</height>
           </rect>
          </property>
@@ -264,8 +264,8 @@ border-radius: 10px;
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>110</y>
-           <width>81</width>
+           <y>140</y>
+           <width>101</width>
            <height>16</height>
           </rect>
          </property>
@@ -273,15 +273,96 @@ border-radius: 10px;
           <string notr="true">color: #547546;</string>
          </property>
          <property name="text">
-          <string>Motos/Vélos</string>
+          <string>Places Motos/Vélos</string>
          </property>
         </widget>
-        <widget class="QListWidget" name="total_3">
+        <widget class="QListWidget" name="moto_velo_dispo">
          <property name="geometry">
           <rect>
            <x>120</x>
-           <y>110</y>
-           <width>41</width>
+           <y>140</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="p_veh_legers_total">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>60</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="p_veh_utilitaire_total">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>100</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="moto_velo_total">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>140</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="poid_lourd_total">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>180</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>30</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Disponible     Total</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="total">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>220</y>
+           <width>31</width>
            <height>21</height>
           </rect>
          </property>
@@ -293,10 +374,10 @@ border-radius: 10px;
        <widget class="QGroupBox" name="groupBox_7">
         <property name="geometry">
          <rect>
-          <x>270</x>
-          <y>430</y>
+          <x>280</x>
+          <y>380</y>
           <width>161</width>
-          <height>51</height>
+          <height>101</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -306,20 +387,78 @@ border-radius: 10px;
 }</string>
         </property>
         <property name="title">
-         <string>Horaires</string>
+         <string>Horaires/Date</string>
         </property>
+        <widget class="QListWidget" name="horaire_date">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>141</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
        </widget>
        <widget class="QPushButton" name="aff_bdd_2">
         <property name="geometry">
          <rect>
           <x>70</x>
-          <y>200</y>
+          <y>170</y>
           <width>131</width>
           <height>23</height>
          </rect>
         </property>
         <property name="text">
          <string>BDD informations parking</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>419</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+border: 1px solid gray;
+border-radius: 10px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Heure</string>
+        </property>
+        <widget class="QListWidget" name="heure">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButton_13">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>360</y>
+          <width>101</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Effacer historique</string>
         </property>
        </widget>
       </widget>
@@ -385,9 +524,9 @@ color: #547546;
         <property name="geometry">
          <rect>
           <x>50</x>
-          <y>380</y>
+          <y>390</y>
           <width>311</width>
-          <height>91</height>
+          <height>81</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -438,7 +577,7 @@ color: #547546;
           <x>50</x>
           <y>140</y>
           <width>311</width>
-          <height>211</height>
+          <height>221</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -535,7 +674,7 @@ color: #547546;
          <property name="geometry">
           <rect>
            <x>140</x>
-           <y>140</y>
+           <y>130</y>
            <width>82</width>
            <height>17</height>
           </rect>
@@ -548,7 +687,7 @@ color: #547546;
          <property name="geometry">
           <rect>
            <x>140</x>
-           <y>160</y>
+           <y>150</y>
            <width>82</width>
            <height>17</height>
           </rect>
@@ -561,13 +700,26 @@ color: #547546;
          <property name="geometry">
           <rect>
            <x>140</x>
-           <y>180</y>
+           <y>170</y>
            <width>82</width>
            <height>17</height>
           </rect>
          </property>
          <property name="text">
           <string>Utilitaire</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="poids_lourd">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>190</y>
+           <width>82</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Poids-lourd</string>
          </property>
         </widget>
        </widget>
@@ -577,11 +729,24 @@ color: #547546;
           <x>410</x>
           <y>30</y>
           <width>281</width>
-          <height>441</height>
+          <height>401</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">color: #547546;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_14">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>450</y>
+          <width>101</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Effacer historique</string>
         </property>
        </widget>
       </widget>
@@ -785,6 +950,19 @@ color: #547546;
          </property>
         </widget>
        </widget>
+       <widget class="QPushButton" name="pushButton_15">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>450</y>
+          <width>101</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Effacer historique</string>
+        </property>
+       </widget>
        <zorder>groupBox_4</zorder>
        <zorder>listWidget_3</zorder>
        <zorder>pushButton</zorder>
@@ -796,6 +974,7 @@ color: #547546;
        <zorder>pushButton_8</zorder>
        <zorder>pushButton_9</zorder>
        <zorder>groupBox_5</zorder>
+       <zorder>pushButton_15</zorder>
       </widget>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
@@ -806,6 +985,226 @@ color: #547546;
        <attribute name="title">
         <string>Paramétres</string>
        </attribute>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>251</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+border: 1px solid gray;
+border-radius: 10px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Moification places parking</string>
+        </property>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>120</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Places Motos/Vélos</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>200</y>
+           <width>31</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>80</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Places utilitaire</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>40</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Places voiture</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>160</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #547546;</string>
+         </property>
+         <property name="text">
+          <string>Places poids lourd</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="modif_place_voiture">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>40</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="modif_place_utilitaire">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>80</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="modif_place_poidslourd">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>160</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="modif_total">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>200</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="modif_place_motos_velos">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>120</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="modif_place_parking">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>240</y>
+           <width>151</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Enregistrer les modifications</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>350</y>
+          <width>191</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+border: 1px solid gray;
+border-radius: 10px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Modification horaire</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>151</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Enregistrer les modifications</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QListWidget" name="listWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>30</y>
+          <width>256</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #547546;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_16">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>370</y>
+          <width>101</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Effacer historique</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>
@@ -876,8 +1275,8 @@ color: #547546;
    <slot>Mode_manuel()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>186</x>
-     <y>177</y>
+     <x>197</x>
+     <y>167</y>
     </hint>
     <hint type="destinationlabel">
      <x>198</x>
@@ -1116,8 +1515,8 @@ color: #547546;
    <slot>Creer_vue_parking()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>135</x>
-     <y>285</y>
+     <x>146</x>
+     <y>267</y>
     </hint>
     <hint type="destinationlabel">
      <x>394</x>
@@ -1132,8 +1531,8 @@ color: #547546;
    <slot>Creer_vue_info()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>160</x>
-     <y>232</y>
+     <x>171</x>
+     <y>217</y>
     </hint>
     <hint type="destinationlabel">
      <x>103</x>
@@ -1189,6 +1588,86 @@ color: #547546;
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>modif_place_parking</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Modification_places_parking()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>574</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Effacer_afficheur_accueil()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>679</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>773</x>
+     <y>444</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Effacer_afficheur_modif_donnees()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>678</x>
+     <y>537</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>770</x>
+     <y>486</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_15</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Effacer_afficheur_mode_manuel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>449</x>
+     <y>535</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>572</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_16</sender>
+   <signal>clicked()</signal>
+   <receiver>C_SERVEUR</receiver>
+   <slot>Effacer_afficheur_modif_bdd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>538</x>
+     <y>461</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>771</x>
+     <y>435</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>Mettre_majuscule()</slot>
@@ -1210,5 +1689,10 @@ color: #547546;
   <slot>Demande_etat_bouton()</slot>
   <slot>Demande_etat_capteur_lumiere()</slot>
   <slot>Reset()</slot>
+  <slot>Modification_places_parking()</slot>
+  <slot>Effacer_afficheur_accueil()</slot>
+  <slot>Effacer_afficheur_modif_donnees()</slot>
+  <slot>Effacer_afficheur_mode_manuel()</slot>
+  <slot>Effacer_afficheur_modif_bdd()</slot>
  </slots>
 </ui>
